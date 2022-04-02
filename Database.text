@@ -1,0 +1,31 @@
+          Database commond  
+
+      1.  "use test"   
+
+      2.     "db.createCollection('users')"  for creating database name "users"
+
+      3. db.users.insert({"first_name":"vikash", "last_name":"kumar", "email":"vikashkumar@gmail.com","gender":"male","ip_address":"dfddgds","age":"23"})
+
+      4. db.users.insertMany([{"first_name":"vikash", "last_name":"kumar", "email":"vikashkumar@gmail.com","gender":"male","ip_address":"dfddgds","age":"23"},
+          {"first_name":"nitesh", "last_name":"kumar", "email":"niteshkumar@gmail.com","gender":"male","ip_address":"dfddhhhhgds","age":"26"},
+          {"first_name":"viksh", "last_name":"kumar", "email":"ashkumar@gmail.com","gender":"male","ip_address":"dhhhhhfddgds","age":"63"},
+          ])
+
+
+     5.  db.users.find({})  -------> for finding all data 
+
+
+    6.  db.users.findOne({"first_name": "vikash"})  -----> for finding one element
+
+
+    7. db.users.update({"_id": "ObjectId("622e6b66c1e7fc2d3cfc7b48"}, {$set: {"last_name": "Shah"}})
+
+    8.db.users.updateMany({"first_name": "vikash"}, {$set: {"age": "22"}})
+
+    9. db.users.remove({"first_name": "vikash"}, 1)
+
+    10. db.users.remove({"first_name": "vikash"}) ---> remove many elements as by finding first_name
+
+    11.  db.dropDatabase()   ----> this commond delete corrent database
+    
+         
